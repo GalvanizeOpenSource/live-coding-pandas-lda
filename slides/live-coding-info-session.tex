@@ -81,9 +81,9 @@
 \setbeamertemplate{blocks}[rounded][shadow=true]
 
 \title[Project teams]{Python and Data Science \\ (Live Coding)}
-\author[Galvanize DS]{E. Wellinger, A. Richards}
+\author[Galvanize DS]{A. Richards}
 \institute{}
-\date[]{01.25.2017}
+\date[]{09.13.2017}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -102,7 +102,7 @@
 \frame{   
 \frametitle{Why Data Science?}
 \footnotesize
-\begin{block}{Well because of the data and because of the science}
+\begin{block}{Well because of the \keywd{data} and because of the \keywd{science}}
  \begin{itemize}
     \item Data science means different things to different people
     \begin{itemize}
@@ -113,7 +113,7 @@
     \begin{itemize}
         \item And so few know how to effectively use data to gain insight
     \end{itemize}
-    \item Science is the proponent of truth---arguably the foundation of society
+    \item Science is the proponent of truth through the communication of evidence
     \end{itemize}
 \end{block}
 
@@ -156,6 +156,128 @@
 \end{block}
 }
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{nlp}
+\subsection{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\frametitle{What is NLP?}
+\scriptsize
+\begin{center}
+ \includegraphics[scale=0.05]{hal.png}
+\end{center}
+
+\begin{itemize}
+  \item \highlt{Conversational Agents}
+  \begin{itemize}
+   \item Siri, Cortana, Google Now, Alexa
+   \item Talking to your car
+   \item Communicating with robots
+  \end{itemize}
+
+  \item \highlt{Machine Translation} 
+  \begin{itemize}
+  \item Google Translate
+  \item \href{https://research.google.com/pubs/pub45610.html}{Google's Neural Machine Translation}
+  \end{itemize}
+  \item Speech Recognition, Speech Synthesis
+  \item Lexical Semantics, Sentiment Analysis 
+  \item Dialogue Systems, Question Answering
+\end{itemize}
+
+\begin{flushleft}
+\begin{tiny}
+\href{https://web.stanford.edu/class/cs124/lec/chatbot.pdf}{Conversation Agent Lecture - Dan Jurafsky}
+\end{tiny}
+\end{flushleft}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{
+\frametitle{NLP and AI}
+\scriptsize
+\begin{block}{}
+The ultimate goal of NLP is to the fill the gap how the humans communicate (natural language) and what the computer understands (machine language).
+\end{block}
+\begin{center}
+ \includegraphics[scale=0.3]{ai-enabled-systems.png}
+\end{center}
+
+Why Deep Learning Needed in NLP
+
+ \begin{itemize}
+  \item It uses a rule-based approach that represents Words as ‘One-Hot’ encoded vectors.
+  \item Traditional method focuses on syntactic representation instead of semantic representation.
+  \item Bag of words - classification model is unable to distinguish certain contexts.
+\end{itemize}
+
+\begin{flushleft}
+\begin{tiny}
+\href{http://www.datasciencecentral.com/profiles/blogs/overview-of-artificial-intelligence-and-role-of-natural-language}{http://www.datasciencecentral.com/profiles/blogs/overview-of-artificial-intelligence-and-role-of-natural-language}
+\end{tiny}
+\end{flushleft}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{ 
+\begin{center}
+ \includegraphics[scale=0.4]{difference-between-classical-nlp-deep-learning-nlp.png}
+\end{center}
+\begin{flushleft}
+\begin{tiny}
+\href{blog.aylien.com}{blog.aylien.com}
+\end{tiny}
+\end{flushleft}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{ 
+
+\begin{block}{What is the meaning of this sentence?}
+\ \\
+\begin{center}I made her duck.\end{center}
+\ \\
+\end{block}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{ 
+\frametitle{Challenges}
+\footnotesize
+
+\keywd{Ambiguity} \ \\
+What does it mean when we say: \highlt{`I made her duck'}
+ \begin{itemize}
+   \item I cooked waterfowl for her
+   \item I cooked waterfowl belonging to her
+   \item I created the (papier mache?) duck she owns
+   \item I caused her to quickly lower her head or body
+   \item I waved my magic wand and turned her into undifferentiated waterfowl
+\end{itemize}
+
+\keywd{Other examples}
+\begin{itemize}
+ \item `Court to try shooting defendant'
+ \item `Hospitals are sued by seven foot doctors'
+\end{itemize}
+ 
+This problem of determining which sense was meant by a specific word is formally known as \keywd{word sense disambiguation}
+
+Other challenges include:
+\begin{itemize}
+ \item Part of speech tagging 
+ \item Syntactic disambiguation (The I made her duck example)
+\end{itemize}
+
+\begin{flushleft}
+ \begin{tiny}
+  Speech and Language Processing (Jurafsky and Martin)
+ \end{tiny}
+\end{flushleft}
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Demos}
 \subsection{}
@@ -167,6 +289,16 @@
  Tutorial Example
 \end{block}
 }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{ 
+\begin{center}
+ \includegraphics[scale=0.3]{lda_plate.pdf}
+\end{center}
+}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \frame{   
@@ -224,28 +356,5 @@ Week& Topic \\
 There are also part-time courses and free meet-ups...
 }
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \frame{   
-% \frametitle{Resources and Contacts}
-% \begin{block}{}
-%  \begin{itemize}
-%     \item 
-%     \item
-%     \item
-%     \end{itemize}
-% \end{block}
-% 
-% \begin{block}{blah}
-%  blah blah
-% \end{block}
-% }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \frame[allowframebreaks]{  
-% \frametitle{References}
-% \begin{tiny} \bibliography{../galvanize.bib}
-% \bibliographystyle{apalike}         % Style BST file
-% \end{tiny}
-% }
 
 \end{document}
