@@ -93,6 +93,7 @@ def scrape_npr(dates, start_num=0):
         if 'message' in response.keys():
             pass
         else:
+            print("response",response)
             for article in response['list']['story']:
                 articles.append(article)
             if len(response['list']['story']) == 20:
@@ -110,6 +111,8 @@ if __name__=='__main__':
     ''' This script should be called in the following way:
     $ python npr_scraper.py 'startdate' 'enddate'
     where dates are formatted 'YYYY-MM-DD'
+    e.g. 2017-10-06 2017-11-06
+
     '''
 
     start_date, end_date = argv[1], argv[2]
